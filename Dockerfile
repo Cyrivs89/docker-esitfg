@@ -2,7 +2,7 @@ FROM debian:latest
 
 MAINTAINER Cyrivs89 <1.marioromero1989@gmail.com>
 
-ENV DEBIAN_FRONTEND noninteractive
+ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && \
     apt-get upgrade -y && \
