@@ -6,8 +6,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && apt-get install -y \
     wget \
-    gnupg \
-    build-essential
+    gnupg
 RUN wget -qO- http://pike.esi.uclm.es/add-pike-repo.sh | sh &&
 RUN apt-get install -y \
     esi-tfg
